@@ -26,211 +26,212 @@ Citizen.CreateThread(function()
 end)
 ```
 --------------------------------------------------------------------------------------------------
-Oyuncu Giriş Kısmı İlik Oyuna Girerken Lazım, Yani Server Dosyasıdır.
+The Player Entry Part I Need While Entering the Game, So Server File
+
 ```lua
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded', 
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded',
 ```
 --------------------------------------------------------------------------------------------------
-Server Dosyası, Job Kısmı Meslek Kısmıdır.
+The Server File is the Job Part, the Job Part.
 ```lua
 RegisterNetEvent('QBCore:Client:OnJobUptade')
 AddEventHandler('QBCore:Client:OnJobUptade', 
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 RegisterNetEvent('esx:setJob')
 AddEventHandler('esx:setJob',
 ```
 --------------------------------------------------------------------------------------------------
-Beyler Bu kısım Yoktu eklendi.
-Anlamı:
-Bu olay, oyuncu sunucuya bağlandığında tetiklenir
+Gentlemen, This section was not available.
+Meaning:
+This event is triggered when the player connects to the server
 ```lua
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded',
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded',
 ```
 --------------------------------------------------------------------------------------------------
-3D li Yazı Ekleme, Cilent Dosyası. Örnek : https://media.discordapp.net/attachments/623207764314816562/812096508786507806/resim_1.png
+Adding 3D Text, Cilent File. Sample : https://media.discordapp.net/attachments/623207764314816562/812096508786507806/resim_1.png
 ```lua
 QBCore.Functions.DrawText3D(1, 1, 1, 'Örnek')
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 DrawText3D(1, 1, 1, 'Örnek') -- (aşağısına function açmanız gerekmektedir.)
 ```
 --------------------------------------------------------------------------------------------------
-Menu Aç Kapat ESX & QBCore De Ki Menüler Örnekler : https://prnt.sc/u4f7s5
+Menu Open Close Menus in ESX & QBCore Examples : https://prnt.sc/u4f7s5
 ```lua
 QBCore.UI.Menu.Open
 QBCore.UI.Menu.CloseAll() -- (menu default scripti kurmanız gerekmektedir.)
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 ESX.UI.Menu.Open
 ESX.UI.Menu.CloseAll()
 ```
 --------------------------------------------------------------------------------------------------
-Bildirim Scripti Örnek : https://dosya.turkmmo.com/2020/09/36521_efa54848705a4069cbedfc2770e50cf1.png
+Notification Script Example : https://dosya.turkmmo.com/2020/09/36521_efa54848705a4069cbedfc2770e50cf1.png
 ```lua
 QBCore.Functions.Notify("Araç kitlendi.", "error")
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 TriggerEvent('Notification',"Örnek.")
 ```
 --------------------------------------------------------------------------------------------------
-Enventer İtem Kısmı.
+Enventer Item Part.
 ```lua
 xPlayer.Functions.GetItemByName 
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 xPlayer.getInventoryItem
 ```
 --------------------------------------------------------------------------------------------------
-Para Ver Para Al Kısmı
+Give Money Receive Part
 ```lua
 ply.Functions.AddMoney('bank', amount, "Bank depost") -- banka
 ply.Functions.RemoveMoney('cash', amount, "Bank depost") -- üstündeki para
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 xPlayer.removeAccountMoney('bank', amount) --para kaldırma
 xPlayer.addMoney(amount) -- para ekleme
 ```
 --------------------------------------------------------------------------------------------------
-Para Kısmı Data.
+Money Portion Data.
 ```lua
 ply.PlayerData.money["bank"]
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 xPlayer.getAccount('bank').money
 ```
 --------------------------------------------------------------------------------------------------
-Envanter İtem Silme Kısmı.
+Inventory Item Deletion Section.
 ```lua
 xPlayer.Functions.RemoveItem 
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 xPlayer.removeInventoryItem 
 ```
 --------------------------------------------------------------------------------------------------
-Envanter İtem Ekleme Kısmı.
+Adding Inventory Item Part.
 ```lua
 xPlayer.Functions.AddItem
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 xPlayer.addInventoryItem
 ```
 --------------------------------------------------------------------------------------------------
-Karakter Kımsı Oyuncunun İd Si Gibi Birşey.
+The Character Is Something Like The Id of The Gamer
 ```lua
 QBCore.Functions.GetPlayer(src)
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 ESX.GetPlayerFromId(src)
 ```
 --------------------------------------------------------------------------------------------------
-Araba Spawn Kısmı Konumu Vsb Şeyler.
+Car Spawn Part Location Etc. Things.
 ```lua
 QBCore.Functions.SpawnVehicle()
 QBCore.Functions.GetVehicleProperties()
 QBCore.Functions.GetClosestVehicle()
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 ESX.Game.SpawnVehicle()
 ESX.Game.GetVehicleProperties()
 ESX.Game.GetClosestVehicle()
 ```
---(Eğer ESX.Game olan neredeyse her şey QBCore.Functions olarak aynı şekildedir.)
---------------------------------------------------------------------------------------------------
-Oyuncu Kendi Karakterin.
+- (Almost everything you have in ESX.Game is the same as QBCore.Functions.)
+- --------------------------------------------------------------------------------------------------
+Player Your Own Character.
 ```lua
 QBCore.Functions.GetPlayerData()
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 ESX.GetPlayerData()
 ```
 --------------------------------------------------------------------------------------------------
-İtem Oluşturma.
+Creating Item.
 ```lua
 QBCore.Functions.CreateUseableItem()
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 ESX.RegisterUsableItem()
 ```
 --------------------------------------------------------------------------------------------------
-Dosya'lar İle Alakalı.
+Related to Files.
 ```lua
 QBCore.Functions.CreateCallback()
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 ESX.RegisterServerCallback()
 ```
 --------------------------------------------------------------------------------------------------
-Dosya'lar İle Alakalı.
+Related to Files.
 ```lua
 QBCore.Functions.TriggerCallback()
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 ESX.TriggerServerCallback()
 ```
 --------------------------------------------------------------------------------------------------
-qb'de cid esx'de identifier kullanılıyor olayı çözmeniz için ufak bir kod bloğu bıraktım.
+Using identifier in cid esx in qb I left a small block of code for you to solve the case.
 ```lua
 QBCore.Functions.CreateCallback('system:fetchStatus', function(source, cb)
     local Player = QBCore.Functions.GetPlayer(source)
@@ -250,9 +251,9 @@ QBCore.Functions.CreateCallback('system:fetchStatus', function(source, cb)
      end
 end)
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 ESX.RegisterServerCallback("system:fetchStatus", function(source, cb)
     local src = source
@@ -283,38 +284,38 @@ ESX.RegisterServerCallback("system:fetchStatus", function(source, cb)
 end)
 ```
 --------------------------------------------------------------------------------------------------
-Sql bağlama kısmı
+Sql linking part
 ```lua
 QBCore.Functions.ExecuteSql()
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 ESX.ExecuteSql() --(ghmattimysql)
 MySQL.Async.execute()
 ```
 --------------------------------------------------------------------------------------------------
-RegisterCommand - yani chat komut kısmı.
+RegisterCommand - the command part of the chat.
 ```lua
 QBCore.Commands.Add()
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 RegisterCommand 
 ```
 -- (RegisterCommand qbcore'da da çalışır.)
 --------------------------------------------------------------------------------------------------
-Karakter Kısmı Dır Data Sına Bağlama.
+Linking to a Data Test is a Character Part
 ```lua
 local Player = QBCore.Functions.GetPlayer(source)
 ['@citizenid'] = Player.PlayerData.citizenid
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 local user : ESX.Get.PlayerFromId(src)
 ["@identifier"] = user.identifier
