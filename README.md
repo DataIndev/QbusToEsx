@@ -1,6 +1,7 @@
 # QbusToEsx Qbus Scriptleri ESX e Çevirme.
 --------------------------------------------------------------------------------------------------
-Qbus Temeli Ve ESX temeli.
+Qbus Foundation And ESX Foundation.
+
  ```lua
 QBCore = nil 
 
