@@ -12,9 +12,9 @@ Citizen.CreateThread(function()
 	end
 end)
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# I meet ESX
 ```lua
 ESX = nil
 
