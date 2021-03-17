@@ -1,4 +1,4 @@
-# QbusToEsx Qbus Scriptleri ESX e Çevirme.
+# QbusToEsx Converting Qbus Scripts to ESX..
 --------------------------------------------------------------------------------------------------
 Qbus Foundation And ESX Foundation.
 
